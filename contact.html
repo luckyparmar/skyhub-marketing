@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact SkyHub Marketing - Let's build your digital success story.">
+    <title>Contact Us | SkyHub Marketing</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info-card {
+            background: var(--bg-tertiary);
+            border: var(--glass-border);
+            border-radius: 20px;
+            padding: 3rem;
+            height: 100%;
+        }
+
+        .contact-info-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            align-items: flex-start;
+        }
+
+        .contact-info-item i {
+            font-size: 1.5rem;
+            color: white;
+            background: var(--gradient-main);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+
+        .contact-info-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info-item p, .contact-info-item a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info-item a:hover {
+            color: var(--accent-purple);
+        }
+
+        .contact-form {
+            background: var(--bg-secondary);
+            border: var(--glass-border);
+            border-radius: 20px;
+            padding: 3rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-main);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .map-section {
+            width: 100%;
+            height: 400px;
+            margin-top: 6rem;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            background: var(--bg-tertiary);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        /* Placeholder styling for Map */
+        .map-placeholder {
+            text-align: center;
+            z-index: 1;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .contact-form, .contact-info-card {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container fade-in-up">
+            <h1 class="hero-heading">Let's <span class="text-gradient">Talk</span></h1>
+            <p style="max-width: 600px; margin: 0 auto; font-size: 1.25rem;">Have a project in mind? We'd love to hear about it.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section pb-0">
+        <div class="container reveal">
+            <div class="contact-grid">
+                
+                <!-- Contact Information -->
+                <div class="contact-info-card">
+                    <h2 style="margin-bottom: 2rem;">Get in Touch</h2>
+                    <p style="margin-bottom: 3rem;">Whether you are looking to scale your business, revamp your website, or dominate social media, we are here to help.</p>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <a href="mailto:enquiry.skyhubmarketing@gmail.com">enquiry.skyhubmarketing@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Contact Number</h4>
+                            <p>+91 9407499075</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>India<br>Serving Clients Worldwide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.8rem;">Send a Message</h3>
+                    <form action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Contact Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+91 9876543210" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Service Required</label>
+                            <select id="subject" class="form-control" style="appearance: none;">
+                                <option value="general">General Inquiry</option>
+                                <option value="templates">Templates Design</option>
+                                <option value="web">Web Design</option>
+                                <option value="social">Social Media Management</option>
+                                <option value="content">Content Creation (Reels & Posts)</option>
+                                <option value="graphics">Graphic Design</option>
+                                <option value="logo">Logo Design</option>
+                                <option value="seo">Search Engine Optimization (SEO)</option>
+                                <option value="digital">Digital Marketing</option>
+                                <option value="ads">Advertising</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" class="form-control" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section Placeholder -->
+    <div class="map-section reveal">
+        <!-- In a real world scenario, embed Google Maps iframe here -->
+        <div style="position: absolute; inset: 0; background: url('https://dummyimage.com/1920x400/12121a/222233.png&text=Map+Location') center/cover no-repeat; opacity: 0.5;"></div>
+        <div class="map-placeholder">
+            <i class="fas fa-map-pin" style="font-size: 3rem; color: var(--accent-purple); margin-bottom: 1rem;"></i>
+            <h3>We Are Here</h3>
+            <p>India - Global Reach</p>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+            submitBtn.disabled = true;
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                service: document.getElementById('subject').value,
+                budget: 'Not specified (HTML Form)', // Adding fallback since budget isn't in this quick form
+                message: document.getElementById('message').value
+            };
+
+            try {
+                const response = await fetch('http://localhost:5000/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                
+                if(response.ok) {
+                    alert('Successfully submitted! Check your Email for the Lead Alert.');
+                    this.reset();
+                } else {
+                    alert('Server received it but there was an issue.');
+                }
+            } catch (err) {
+                console.error(err);
+                alert('Network Error! Please make sure your backend server is running on Port 5000.');
+            } finally {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>

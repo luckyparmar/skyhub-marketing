@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About SkyHub Marketing - Learn about our mission, vision, and the team driving digital success.">
+    <title>About Us | SkyHub Marketing</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-story {
+            padding: 8rem 0;
+            background: var(--bg-color);
+        }
+        
+        .mission-vision-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .team-section {
+            background: var(--bg-secondary);
+            padding: 6rem 0;
+        }
+
+        .team-card {
+            background: var(--bg-tertiary);
+            border: var(--glass-border);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(21, 65, 152, 0.4);
+        }
+
+        .team-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--gradient-main);
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .team-name {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .team-role {
+            color: var(--accent-purple);
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .mission-vision-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container fade-in-up">
+            <h1 class="hero-heading">About <span class="text-gradient">SkyHub</span></h1>
+            <p style="max-width: 600px; margin: 0 auto; font-size: 1.25rem;">Your trusted partner in navigating the complex digital landscape.</p>
+        </div>
+    </header>
+
+    <!-- Story Section -->
+    <section class="about-story">
+        <div class="container reveal">
+            <div class="grid grid-2" style="align-items: center;">
+                <div>
+                    <span class="section-subtitle">Our Story</span>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Born from a passion for <span class="text-gradient">Growth</span></h2>
+                    <p>SkyHub Marketing was founded with a singular focus: to bridge the gap between incredible brands and their target audiences online. We recognized that many businesses struggled to establish a dominant online presence in a sea of digital noise.</p>
+                    <p>What started as a small team of passionate marketers has now evolved into a full-scale digital growth agency, empowering businesses around the globe to realize their true digital potential through data-driven campaigns, innovative design, and unrelenting dedication.</p>
+                </div>
+                <div style="background: var(--bg-tertiary); border: var(--glass-border); border-radius: 20px; padding: 3rem; position: relative;">
+                    <div style="position: absolute; top: -15px; left: -15px; width: 50px; height: 50px; border-top: 3px solid var(--accent-blue); border-left: 3px solid var(--accent-blue);"></div>
+                    <div style="position: absolute; bottom: -15px; right: -15px; width: 50px; height: 50px; border-bottom: 3px solid var(--accent-purple); border-right: 3px solid var(--accent-purple);"></div>
+                    <h3 style="font-size: 2rem; margin-bottom: 1rem;"><i class="fas fa-chart-line text-gradient"></i> Core Philosophy</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.8;">"A brand is no longer what we tell the consumer it is - it is what consumers tell each other it is. We help you control the narrative."</p>
+                </div>
+            </div>
+
+            <!-- Mission & Vision -->
+            <div class="mission-vision-cards">
+                <div class="card" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-bullseye"></i></div>
+                    <h3 class="card-title">Our Mission</h3>
+                    <p>To deliver scalable, revenue-generating digital marketing solutions that help businesses grow online, cutting through the clutter to connect with real humans.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-eye"></i></div>
+                    <h3 class="card-title">Our Vision</h3>
+                    <p>To become a globally recognized and trusted digital growth partner, shaping the future of digital marketing with innovation, transparency, and creativity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container reveal">
+            <div class="text-center mb-6">
+                <span class="section-subtitle">Leadership</span>
+                <h2>Meet The Founder</h2>
+                <p>Passionate professional dedicated to your success.</p>
+            </div>
+            
+            <div class="grid" style="grid-template-columns: 1fr; max-width: 400px; margin: 0 auto;">
+                <div class="team-card">
+                    <div class="team-img" style="background: none; border-radius: 50%; overflow: hidden; width: 150px; height: 150px;">
+                        <img src="images/Founder.png" alt="Mr. Lucky Parmar" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 class="team-name">Mr. Lucky Parmar</h3>
+                    <div class="team-role">Founder & CEO</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global CTA -->
+    <section class="cta-global reveal">
+        <div class="container">
+            <h2>Ready to grow with us?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.2rem;">Partner with SkyHub and watch your business soar to new heights.</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Contact Our Experts</a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

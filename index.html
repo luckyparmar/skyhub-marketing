@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyHub Marketing | Digital Growth Agency</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Home Specific Styles */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: radial-gradient(circle at top right, rgba(21, 65, 152, 0.2), transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.2), transparent 40%);
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            padding: 4rem 0;
+            background: rgba(255, 255, 255, 0.02);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        [data-theme="light"] .stats-section {
+            background: rgba(0, 0, 0, 0.02);
+        }
+
+        .stat-item h3 {
+            font-size: 3.5rem;
+            color: var(--accent-blue);
+            margin-bottom: 0.5rem;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .testimonial-card {
+            text-align: left;
+            padding: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="glass-ring" style="width: 30vw; height: 30vw; top: 5%; right: 5%;"></div>
+        <div class="glass-ring" style="width: 45vw; height: 45vw; bottom: -10%; left: -10%; border-color: rgba(59, 130, 246, 0.3); animation-direction: reverse; animation-duration: 25s;"></div>
+
+        <!-- Abstract Floating UI Widgets -->
+        <div class="glass-widget float-anim delay-1" style="top: 25%; left: 8%;">
+            <div class="line"></div><div class="line w-50"></div>
+        </div>
+        <div class="glass-widget float-anim delay-3" style="bottom: 25%; right: 8%;">
+            <div style="display:flex; gap: 10px; align-items: flex-end; height: 50px;">
+                <div class="bar h-40"></div><div class="bar h-80"></div><div class="bar h-60"></div><div class="bar h-100"></div>
+            </div>
+            <div style="margin-top: 10px; color: var(--text-muted); font-size: 0.8rem; font-weight: bold;">Traffic Growth +140%</div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <div style="display: flex; justify-content: center; width: 100%; position: relative; top: 20px; margin-bottom: 1rem;">
+                    <span class="hero-badge pulse-anim"><i class="fas fa-rocket"></i> Welcome to SkyHub</span>
+                </div>
+                <h1 class="hero-heading">Grow Your Business with <span class="text-gradient shimmer-text">SkyHub Marketing</span></h1>
+                <p class="hero-subtitle">We help brands scale with powerful digital marketing strategies, cutting-edge websites, and high-converting campaigns.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                    <a href="services.html" class="btn btn-outline">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Endless Animated Marquee Graphic -->
+    <section class="marquee-section" style="background: var(--gradient-main); padding: 1.5rem 0; overflow: hidden; transform: rotate(-2deg) scale(1.05); margin: 6rem 0; border-top: 2px solid white; border-bottom: 2px solid white; box-shadow: 0 0 30px rgba(21, 65, 152, 0.4);">
+        <div class="marquee-content" style="display: flex; white-space: nowrap; font-size: 2.5rem; font-weight: 800; color: #fff; text-transform: uppercase;">
+            <span style="padding: 0 3rem;"> DIGITAL GROWTH</span>
+            <span style="padding: 0 3rem;"> SEO DOMINATION</span>
+            <span style="padding: 0 3rem;"> WEB DEVELOPMENT</span>
+            <span style="padding: 0 3rem;"> PERFORMANCE ADS</span>
+            <span style="padding: 0 3rem;"> SOCIAL MEDIA</span>
+            <span style="padding: 0 3rem;"> DIGITAL GROWTH</span>
+            <span style="padding: 0 3rem;"> SEO DOMINATION</span>
+            <span style="padding: 0 3rem;"> WEB DEVELOPMENT</span>
+            <span style="padding: 0 3rem;"> PERFORMANCE ADS</span>
+            <span style="padding: 0 3rem;"> SOCIAL MEDIA</span>
+        </div>
+    </section>
+
+    <div class="glow-line container" style="margin-top: 0;"></div>
+
+    <!-- Services Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-6 reveal">
+                <span class="section-subtitle">What We Do</span>
+                <h2>Our Core Services</h2>
+                <p>Comprehensive digital solutions tailored for your brand's explosive growth.</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card reveal-left">
+                    <div class="card-icon float-anim"><i class="fas fa-layer-group"></i></div>
+                    <h3 class="card-title">Templates Design</h3>
+                    <p>Custom, reusable marketing templates for your brand.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon float-anim"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="card-title">Web Design</h3>
+                    <p>Beautiful, fast, and conversion-optimized websites.</p>
+                </div>
+                <div class="card reveal-right">
+                    <div class="card-icon float-anim"><i class="fas fa-share-nodes"></i></div>
+                    <h3 class="card-title">Social Media Management</h3>
+                    <p>We handle your entire social media presence and growth.</p>
+                </div>
+                <div class="card reveal-left">
+                    <div class="card-icon float-anim"><i class="fas fa-video"></i></div>
+                    <h3 class="card-title">Content Creation (Reels & Posts)</h3>
+                    <p>Viral short-form Reels and high-retention image posts.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon float-anim"><i class="fas fa-bezier-curve"></i></div>
+                    <h3 class="card-title">Graphic Design</h3>
+                    <p>Striking, original graphics that instantly grab attention.</p>
+                </div>
+                <div class="card reveal-right">
+                    <div class="card-icon float-anim"><i class="fas fa-pen-nib"></i></div>
+                    <h3 class="card-title">Logo Design</h3>
+                    <p>We design premium, scalable logos for your business.</p>
+                </div>
+                <div class="card reveal-left">
+                    <div class="card-icon float-anim"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="card-title">Search Engine Optimization (SEO)</h3>
+                    <p>SEO strategies driving high-intent organic traffic.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon float-anim"><i class="fas fa-bullseye"></i></div>
+                    <h3 class="card-title">Digital Marketing</h3>
+                    <p>A comprehensive approach to scale your revenue through interconnected campaigns.</p>
+                </div>
+                <div class="card reveal-right">
+                    <div class="card-icon float-anim"><i class="fas fa-ad"></i></div>
+                    <h3 class="card-title">Advertising</h3>
+                    <p>Highly targeted, data-backed ad campaigns across multiple networks.</p>
+                </div>
+            </div>
+            <div class="text-center reveal" style="margin-top: 3rem;">
+                <a href="services.html" class="btn btn-outline">Explore All Services <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section" style="background: var(--bg-tertiary);">
+        <div class="container reveal">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="reveal-left">
+                    <span class="section-subtitle">The SkyHub Advantage</span>
+                    <h2 style="font-size: 3rem; margin-bottom: 2rem;">Why Partners Choose <span class="text-gradient">SkyHub</span></h2>
+                    <p style="margin-bottom: 2rem;">We don't just execute services; we partner with you to understand your ultimate business goals. Our strategies are crafted to deliver measurable ROI, fast.</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <div style="color: var(--accent-blue); font-size: 1.5rem; margin-top: 0.2rem;"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem; font-family: var(--font-heading);">Result-Driven Strategies</h4>
+                                <p style="margin-bottom: 0;">Every campaign is built on data and aimed at clear KPIs to ensure maximum success.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <div style="color: var(--accent-purple); font-size: 1.5rem; margin-top: 0.2rem;"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem; font-family: var(--font-heading);">Client-Focused Approach</h4>
+                                <p style="margin-bottom: 0;">Transparent communication and dedicated account managers so you are always in the loop.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <div style="color: var(--accent-blue); font-size: 1.5rem; margin-top: 0.2rem;"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem; font-family: var(--font-heading);">Fast & Affordable</h4>
+                                <p style="margin-bottom: 0;">Premium quality that doesn't break the bank, delivered seamlessly on time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reveal-right" style="position: relative;">
+                    <!-- Decorative Graphic element -->
+                    <div class="pulse-anim" style="width: 100%; aspect-ratio: 1; background: var(--gradient-main); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; animation: morph 8s ease-in-out infinite; opacity: 0.2;"></div>
+                    <div class="float-anim hover-scale-anim" style="position: absolute; top: 10%; right: 10%; bottom: 10%; left: 10%; background: var(--bg-secondary); border-radius: 20px; border: var(--glass-border); display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 2rem;">
+                        <i class="fas fa-rocket" style="font-size: 5rem; color: var(--accent-purple); margin-bottom: 2rem;"></i>
+                        <h3 style="font-size: 2rem;">Ready to Launch?</h3>
+                        <p>Join our successful businesses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+        <div class="container reveal">
+            <div class="text-center mb-6">
+                <span class="section-subtitle">Testimonials</span>
+                <h2>What Our Clients Say</h2>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="testimonial-card card">
+                    <i class="fas fa-quote-left quote-icon" style="font-size: 2rem; color: rgba(21, 65, 152, 0.3); margin-bottom: 1rem;"></i>
+                    <p>"SkyHub transformed our online presence! Within 3 months, our website traffic tripled, and our leads went through the roof. Truly a game changer for our agency."</p>
+                    <div class="client-name" style="color: var(--text-main); font-weight: 600; margin-bottom: 0.2rem; margin-top: 1.5rem;">Sarah Jenkins</div>
+                    <div class="client-role" style="font-size: 0.9rem; color: var(--accent-purple);">CEO, TechNova Solutions</div>
+                </div>
+                <div class="testimonial-card card">
+                    <i class="fas fa-quote-left quote-icon" style="font-size: 2rem; color: rgba(21, 65, 152, 0.3); margin-bottom: 1rem;"></i>
+                    <p>"The team's dedication to our Meta ads campaign was incredible. Not only did they lower our CPA, but the creative assets they designed were visually stunning."</p>
+                    <div class="client-name" style="color: var(--text-main); font-weight: 600; margin-bottom: 0.2rem; margin-top: 1.5rem;">Michael Chang</div>
+                    <div class="client-role" style="font-size: 0.9rem; color: var(--accent-purple);">Founder, Elevate Fitness</div>
+                </div>
+                <div class="testimonial-card card">
+                    <i class="fas fa-quote-left quote-icon" style="font-size: 2rem; color: rgba(21, 65, 152, 0.3); margin-bottom: 1rem;"></i>
+                    <p>"If you want an agency that actually cares about your ROI, SkyHub is it. They completely overhauled our branding and built a premium website that converts."</p>
+                    <div class="client-name" style="color: var(--text-main); font-weight: 600; margin-bottom: 0.2rem; margin-top: 1.5rem;">Priya Patel</div>
+                    <div class="client-role" style="font-size: 0.9rem; color: var(--accent-purple);">Marketing Director, Aura Boutique</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global CTA -->
+    <section class="cta-global">
+        <div class="container reveal">
+            <h2>Ready to dominate your market?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.2rem;">Let's build a tailored marketing strategy to elevate your brand.</p>
+            <a href="contact.html" class="btn btn-primary btn-large" style="padding: 1.2rem 3rem; font-size: 1.2rem;">Get Your Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

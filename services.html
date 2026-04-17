@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkyHub Marketing Services - SEO, Social Media, Web Design, and Ads.">
+    <title>Services | SkyHub Marketing</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .service-page-section {
+            padding: 6rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .service-page-section:nth-child(even) {
+            background: var(--bg-tertiary);
+        }
+
+        .service-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .service-benefits {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .service-benefits li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .service-benefits li i {
+            color: var(--accent-purple);
+            background: rgba(21, 65, 152, 0.1);
+            padding: 5px;
+            border-radius: 50%;
+            font-size: 0.9rem;
+        }
+
+        .service-visual {
+            background: var(--bg-secondary);
+            border: var(--glass-border);
+            border-radius: 20px;
+            padding: 4rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-visual i {
+            font-size: 8rem;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index: 1;
+        }
+
+        .service-visual::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: var(--gradient-main);
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media (max-width: 768px) {
+            .service-visual { padding: 2rem; }
+            .service-visual i { font-size: 5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container fade-in-up">
+            <h1 class="hero-heading">Our <span class="text-gradient">Services</span></h1>
+            <p style="max-width: 600px; margin: 0 auto; font-size: 1.25rem;">Comprehensive digital solutions engineered for unparalleled growth.</p>
+        </div>
+    </header>
+
+    <!-- Templates Design -->
+    <section class="service-page-section" id="templates-design">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="service-visual reveal-left float-anim">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <div class="service-details reveal-right">
+                    <h2 style="font-size: 2.5rem;">Templates Design</h2>
+                    <p>Custom, reusable marketing templates for your brand to maintain visual consistency across all your campaigns and social media presence.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fas fa-check"></i> Brand Kit Integration</li>
+                        <li><i class="fas fa-check"></i> Scalable Assets</li>
+                        <li><i class="fas fa-check"></i> Social Media Packs</li>
+                        <li><i class="fas fa-check"></i> Presentation Decks</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn btn-outline">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Design -->
+    <section class="service-page-section" id="web-design">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="service-details reveal-left" style="order: 1;">
+                    <h2 style="font-size: 2.5rem;">Web Design</h2>
+                    <p>Visually stunning, fast-loading, and conversion-optimized websites specifically engineered to represent your brand authority.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fas fa-check"></i> Mobile-Responsive Layouts</li>
+                        <li><i class="fas fa-check"></i> Custom UI/UX</li>
+                        <li><i class="fas fa-check"></i> E-Commerce Solutions</li>
+                        <li><i class="fas fa-check"></i> High Performance</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn btn-outline">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-visual reveal-right float-anim" style="order: 2;">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
+            <style>
+                @media (max-width: 768px) {
+                    #web-design .service-details { order: 2 !important; }
+                    #web-design .service-visual { order: 1 !important; }
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- Social Media Management -->
+    <section class="service-page-section" id="social-media">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="service-visual reveal-left float-anim">
+                    <i class="fas fa-share-nodes"></i>
+                </div>
+                <div class="service-details reveal-right">
+                    <h2 style="font-size: 2.5rem;">Social Media Management</h2>
+                    <p>We handle your entire social media presence. From scheduling to community engagement, we build a loyal and vibrant audience.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fas fa-check"></i> Community Engagement</li>
+                        <li><i class="fas fa-check"></i> Content Calendars</li>
+                        <li><i class="fas fa-check"></i> Platform Growth</li>
+                        <li><i class="fas fa-check"></i> Analytics Tracking</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn btn-outline">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Creation (Reels & Posts) -->
+    <section class="service-page-section" id="content-creation">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="service-details reveal-left" style="order: 1;">
+                    <h2 style="font-size: 2.5rem;">Content Creation (Reels & Posts)</h2>
+                    <p>Viral-worthy short-form vertical videos and high-retention image posts perfectly tailored for modern social algorithms.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fas fa-check"></i> TikTok & Reels Production</li>
+                        <li><i class="fas fa-check"></i> Trend-Based Scripts</li>
+                        <li><i class="fas fa-check"></i> Professional Editing</li>
+                        <li><i class="fas fa-check"></i> High-Quality Graphics</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn btn-outline">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-visual reveal-right float-anim" style="order: 2;">
+                    <i class="fas fa-video"></i>
+                </div>
+            </div>
+            <style>
+                @media (max-width: 768px) {
+                    #content-creation .service-details { order: 2 !important; }
+                    #content-creation .service-visual { order: 1 !important; }
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- Graphic Design -->
+    <section class="service-page-section" id="graphic-design">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="service-visual reveal-left float-anim">
+                    <i class="fas fa-bezier-curve"></i>
+                </div>
+                <div class="service-details reveal-right">
+                    <h2 style="font-size: 2.5rem;">Graphic Design</h2>
+                    <p>Striking, original graphics that instantly grab attention. We create everything from marketing collateral to digital ad creatives.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fas fa-check"></i> Custom Illustrations</li>
+                        <li><i class="fas fa-check"></i> Ad Creatives</li>
+                        <li><i class="fas fa-check"></i> Print Materials</li>
+                        <li><i class="fas fa-check"></i> Infographics</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn btn-outline">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Design -->
+    <section class="service-page-section" id="logo-design">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="service-details reveal-left" style="order: 1;">
+                    <h2 style="font-size: 2.5rem;">Logo Design</h2>
+                    <p>A great brand starts with an unforgettable identity. We design premium, scalable logos that capture the core essence of your business.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fas fa-check"></i> Custom Iconography</li>
+                        <li><i class="fas fa-check"></i> Typography Selection</li>
+                        <li><i class="fas fa-check"></i> Scalable Vectors</li>
+                        <li><i class="fas fa-check"></i> Brand Guidelines</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn btn-outline">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-visual reveal-right float-anim" style="order: 2;">
+                    <i class="fas fa-pen-nib"></i>
+                </div>
+            </div>
+            <style>
+                @media (max-width: 768px) {
+                    #logo-design .service-details { order: 2 !important; }
+                    #logo-design .service-visual { order: 1 !important; }
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- Search Engine Optimization (SEO) -->
+    <section class="service-page-section" id="seo">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="service-visual reveal-left float-anim">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="service-details reveal-right">
+                    <h2 style="font-size: 2.5rem;">Search Engine Optimization (SEO)</h2>
+                    <p>Stop hiding on the second page of Google. Our rigorous SEO strategies drive high-intent, targeted organic traffic directly to your site.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fas fa-check"></i> Keyword Research</li>
+                        <li><i class="fas fa-check"></i> On-Page Optimization</li>
+                        <li><i class="fas fa-check"></i> Backlink Campaigns</li>
+                        <li><i class="fas fa-check"></i> Local SEO</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn btn-outline">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Marketing -->
+    <section class="service-page-section" id="digital-marketing">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="service-details reveal-left" style="order: 1;">
+                    <h2 style="font-size: 2.5rem;">Digital Marketing</h2>
+                    <p>A comprehensive, 360-degree digital approach to scale your revenue through interconnected multi-channel campaigns.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fas fa-check"></i> Holistic Strategy</li>
+                        <li><i class="fas fa-check"></i> Funnel Optimization</li>
+                        <li><i class="fas fa-check"></i> Conversion Tracking</li>
+                        <li><i class="fas fa-check"></i> Brand Positioning</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn btn-outline">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-visual reveal-right float-anim" style="order: 2;">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+            </div>
+            <style>
+                @media (max-width: 768px) {
+                    #digital-marketing .service-details { order: 2 !important; }
+                    #digital-marketing .service-visual { order: 1 !important; }
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- Advertising -->
+    <section class="service-page-section" id="advertising">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="service-visual reveal-left float-anim">
+                    <i class="fas fa-ad"></i>
+                </div>
+                <div class="service-details reveal-right">
+                    <h2 style="font-size: 2.5rem;">Advertising</h2>
+                    <p>Unlock immense scale. We run highly targeted, data-backed ad campaigns across multiple networks to ensure maximum return on ad spend.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fas fa-check"></i> Google Search Ads</li>
+                        <li><i class="fas fa-check"></i> Display Networks</li>
+                        <li><i class="fas fa-check"></i> A/B Testing Outbound</li>
+                        <li><i class="fas fa-check"></i> Lead Generation</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn btn-outline">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global CTA -->
+    <section class="cta-global reveal">
+        <div class="container">
+            <h2>Ready to transform your brand?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.2rem;">Pick the services that align with your goals and let's make magic happen.</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -21,7 +21,11 @@ export default function Contact() {
     setStatus({ loading: true, success: false, error: '' });
 
     try {
-      const response = await fetch('http://localhost:5000/api/contact', {
+      const apiUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+        ? 'http://localhost:5000/api/contact' 
+        : '/_/backend/api/contact';
+      
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
